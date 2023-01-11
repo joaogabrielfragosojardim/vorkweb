@@ -16,4 +16,12 @@ export const cases = [
     link: "https://onwe.com.br/",
     rounded: true,
   },
+  {
+    src: "/projects/miguelito.svg",
+    title: "LP de lançamento",
+    about: "Landing page de lançamento para o curso Engenharia sem Migué",
+    bg: "#77A0A9",
+    link: "https://lps.onwe.com.br/engenharia-sem-migue",
+    rounded: true,
+  },
 ];

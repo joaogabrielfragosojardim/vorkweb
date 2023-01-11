@@ -6,6 +6,7 @@ import { Dedicated } from "../components/Dedicated";
 import { Unique } from "../components/Unique";
 import { Cases } from "../components/ Cases";
 import { Header } from "../components/Header";
+import "react-slideshow-image/dist/styles.css";
 
 export default function Home() {
   return (
