@@ -4,14 +4,14 @@ export const Words = () => (
   <Flex
     maxW="1446px"
     m="auto"
-    p="96px 0px"
+    p={{ base: "20px 0px", xl: "96px 0px" }}
     justify="center"
     align="center"
     textAlign="center"
     flexDir="column"
-    fontSize="48px"
+    fontSize={{ base: "32px", md: "48px" }}
     gap="32px"
-    minH="60vh"
+    minH={{ base: "30vh", xl: "60vh" }}
   >
     <Text _hover={{ textDecor: "underline" }}>Criativo</Text>
     <Text _hover={{ textDecor: "underline" }}>Elegante</Text>

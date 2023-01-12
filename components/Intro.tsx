@@ -1,8 +1,18 @@
-import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Link, Text } from "@chakra-ui/react";
 
 export const Intro = () => (
-  <Flex maxW="1446px" m="auto" p="96px 0px" justify="space-between">
-    <Box fontSize="68px" lineHeight="82px">
+  <Flex
+    maxW="1446px"
+    m="auto"
+    p={{base:"32px 0px", xl:"96px 0px"}}
+    justify="space-between"
+    flexDir={{ base: "column", xl: "row" }}
+    gap={{ base: "64px", xl: "unset" }}
+  >
+    <Box
+      fontSize={{ base: "34px", md: "68px" }}
+      lineHeight={{ base: "42px", md: "82px" }}
+    >
       <Flex gap="16px">
         <Text>Webdesign</Text>
         <Text
@@ -13,11 +23,13 @@ export const Intro = () => (
         </Text>
       </Flex>
       <Text>Gestão de Mídias</Text>
-      <Button bg="white" color="black" borderRadius="0px" mt="32px">
-        Entre em contato
-      </Button>
+      <Link href="https://wa.me/5562981635159" target="_bank">
+        <Button bg="white" color="black" borderRadius="0px" mt="32px">
+          Entre em contato
+        </Button>
+      </Link>
     </Box>
-    <Box w="362px" h="495px">
+    <Box w={{ base: "241px", xl: "362px" }} h={{ base: "330px", xl: "495px" }}>
       <Image src="/intro.png" alt="a notebook with a coffe mug and an iphone" />
     </Box>
   </Flex>

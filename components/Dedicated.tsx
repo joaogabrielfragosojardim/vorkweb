@@ -1,22 +1,37 @@
-import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Link, Text } from "@chakra-ui/react";
 
 export const Dedicated = () => (
-  <Flex maxW="1446px" m="auto" p="96px 0px" justify="space-between">
-    <Box w="362px" h="495px">
-      <Image src="/dedicated.png" alt="a notebook with a coffe mug and an iphone" />
+  <Flex
+    maxW="1446px"
+    m="auto"
+    p="96px 0px"
+    justify="space-between"
+    flexDir={{ base: "column", xl: "row" }}
+    gap={{ base: "64px", xl: "unset" }}
+  >
+    <Box w={{ base: "241px", xl: "362px" }} h={{ base: "330px", xl: "495px" }}>
+      <Image
+        src="/dedicated.png"
+        alt="a notebook with a coffe mug and an iphone"
+      />
     </Box>
     <Box maxW="532px">
-      <Text fontSize="68px" lineHeight="82px">
+      <Text
+        fontSize={{ base: "34px", md: "68px" }}
+        lineHeight={{ base: "42px", md: "82px" }}
+      >
         Dedicados a sua marca
       </Text>
-      <Text fontSize="18px" mt="16px">
+      <Text fontSize={{ base: "16px", md: "18px" }} mt="16px">
         Verificamos cada detalhe, cada visão e emoção que suamarca gostaria de
         emitir ao seu cliente e a transformamos em site de extrema rapidez e
         qualidade.
       </Text>
-      <Button bg="white" color="black" borderRadius="0px" mt="32px">
-        Entre em contato
-      </Button>
+      <Link href="https://wa.me/5562981635159" target="_bank">
+        <Button bg="white" color="black" borderRadius="0px" mt="32px">
+          Entre em contato
+        </Button>
+      </Link>
     </Box>
   </Flex>
 );

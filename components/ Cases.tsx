@@ -1,11 +1,4 @@
-import {
-  Box,
-  Flex,
-  Image,
-  Link,
-  SlideFade,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Flex, Image, Link, SlideFade, Text } from "@chakra-ui/react";
 import { cases } from "../constants/cases";
 import { lessThenTen } from "../utils/lessThenTen";
 import { InView } from "react-intersection-observer";
@@ -21,7 +14,12 @@ export const Cases = () => {
             in={inView}
             transition={{ enter: { duration: animations } }}
           >
-            <Text ref={ref} fontSize="68px" mt="5rem" id="projects">
+            <Text
+              ref={ref}
+              fontSize={{ base: "34px", md: "68px" }}
+              mt="5rem"
+              id="projects"
+            >
               Projetos
             </Text>
           </SlideFade>
@@ -33,7 +31,7 @@ export const Cases = () => {
 
           return (
             <Box key={uCase.link} mt="64px">
-              <Text fontSize="18px" mb="16px">
+              <Text fontSize={{ base: "16px", md: "18px" }} mb="16px">
                 {newIndex}
               </Text>
               <Link
@@ -50,10 +48,18 @@ export const Cases = () => {
                     borderRadius={uCase.rounded ? "100%" : "unset"}
                   />
                 </Flex>
-                <Text fontSize="18px" fontWeight="bold" mt="2rem">
+                <Text
+                  fontSize={{ base: "16px", md: "18px" }}
+                  fontWeight="bold"
+                  mt="2rem"
+                >
                   {uCase.title}
                 </Text>
-                <Text fontSize="18px" mt="0.5rem" maxW="620px">
+                <Text
+                  fontSize={{ base: "16px", md: "18px" }}
+                  mt="0.5rem"
+                  maxW="420px"
+                >
                   {uCase.about}
                 </Text>
               </Link>
