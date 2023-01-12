@@ -24,4 +24,12 @@ export const cases = [
     link: "https://lps.onwe.com.br/engenharia-sem-migue",
     rounded: true,
   },
+  {
+    src: "/projects/portfolioJoao.webp",
+    title: "Portfolio",
+    about: "portolio / curriculum para um desenvolvedor",
+    bg: "#DF9A57",
+    link: "https://portfolio-2023-rho.vercel.app/",
+    rounded: false,
+  },
 ];
