@@ -27,7 +27,7 @@ export const Dedicated = () => (
         emitir ao seu cliente e a transformamos em site de extrema rapidez e
         qualidade.
       </Text>
-      <Link href="https://wa.me/5562981635159" target="_bank">
+      <Link href="https://wa.me/5547992798665" target="_bank">
         <Button bg="white" color="black" borderRadius="0px" mt="32px">
           Entre em contato
         </Button>

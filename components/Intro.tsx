@@ -23,7 +23,7 @@ export const Intro = () => (
         </Text>
       </Flex>
       <Text>Gestão de Mídias</Text>
-      <Link href="https://wa.me/5562981635159" target="_bank">
+      <Link href="https://wa.me/5547992798665" target="_bank">
         <Button bg="white" color="black" borderRadius="0px" mt="32px">
           Entre em contato
         </Button>

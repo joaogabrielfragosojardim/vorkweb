@@ -17,7 +17,7 @@ export const Footer = () => (
       <Link href="https://instagram.com/vorkweb" target="_blank">
         <BsInstagram />
       </Link>
-      <Link href="https://wa.me/5562981635159" target="_blank">
+      <Link href="https://wa.me/5547992798665" target="_blank">
         <BsWhatsapp />
       </Link>
     </Flex>
